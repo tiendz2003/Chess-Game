@@ -1,0 +1,10 @@
+<!-- res/drawable/button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#DFDF64" /> <!-- Màu vàng nhạt -->
+
+    <stroke
+        android:width="10dp"
+        android:color="#FFD700" /> <!-- Màu vàng đậm -->
+
+    <corners android:radius="8dp" /> <!-- Góc bo tròn, bạn có thể điều chỉnh -->
+</shape>

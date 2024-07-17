@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+    <TableLayout android:id="@+id/tableLayout1"
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent" android:stretchColumns="*"
+        android:shrinkColumns="*">
+        <TableRow android:gravity="center_horizontal"
+            android:id="@+id/tableRow1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        </TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView21"
+                style="@style/text_text"
+                android:text="LỊCH SỬ ĐẤU" />
+
+            <TextView android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@+id/TextView22" android:text="THẮNG" style="@style/text_text"/>
+            <TextView android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@+id/TextView23" android:text="THUA" style="@style/text_text"/>
+            <TextView android:typeface="serif" android:textStyle="bold" android:gravity="center" android:id="@+id/TextView24" android:text="BỎ CUỘC" style="@style/text_text"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow3" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@+id/textView31" android:text="@string/single_player_0" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView32" android:text="" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView33" android:text="" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView34" android:text="" style="@style/text_text"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow4" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@+id/textView41" android:text="@string/double_player" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView42" android:text="" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView43" android:text="" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView44" android:text="" style="@style/text_text"/>
+        </TableRow>
+        <TableRow android:id="@+id/tableRow5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@+id/textView51" android:text="@string/single_player_2" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView52" android:text="" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView53" android:text="" style="@style/text_text"/>
+            <TextView android:gravity="center_horizontal" android:id="@+id/textView54" android:text="" style="@style/text_text"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

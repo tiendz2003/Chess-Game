@@ -1,0 +1,80 @@
+<!-- res/layout/activity_guide.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Tiêu đề Hướng Dẫn Chơi -->
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times"
+                android:text="Hướng Dẫn Chơi Cờ Vây Dưa Hấu"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <!-- Tiêu đề Thiết Bị -->
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times"
+                android:text="Bàn Cờ"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Nội dung Thiết Bị -->
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times"
+                android:textStyle="italic"
+                android:text="  Bảng bao gồm một vòng tròn lớn với một vòng tròn ở giữa bên trong. Bốn hình bán nguyệt tạo thành sự sắp xếp theo hướng bắc, nam, đông và tây ở bên trong vòng tròn lớn hơn. Vòng tròn lớn và vòng tròn nhỏ hơn ở giữa được chia đều thành bốn lát bánh. Điều này tạo ra 21 điểm giao nhau nơi các quân cờ được chơi. Mỗi người chơi có sáu mảnh. Một người chơi chơi quân đen và người chơi kia chơi quân trắng, tuy nhiên, bất kỳ hai màu hoặc vật thể có thể phân biệt nào cũng được."
+                android:paddingBottom="16dp"/>
+
+            <!-- Tiêu đề Quy Tắc -->
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times"
+                android:text="Quy Tắc"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"/>
+
+            <!-- Nội dung Quy Tắc -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/times"
+                android:textStyle="italic"
+                android:text="      Người chơi quyết định chơi màu gì và ai bắt đầu trước. Sáu quân cờ của mỗi người chơi ban đầu được đặt ở sáu điểm giao nhau gần nhất về phía bàn cờ của họ. Người chơi luân phiên nhau và di chuyển một quân mỗi lượt. Một quân cờ có thể di chuyển một ô mỗi lượt theo mô hình trên bảng. Quân địch có thể bị bắt nếu bị quân của người chơi bao vây khiến nó không thể di chuyển. Chỉ có thể bắt được một quân địch mỗi lượt. Các mảnh bị bắt sẽ được gỡ bỏ khỏi bảng. Mục đích là giảm quân số của đối phương xuống còn hai quân."
+                android:paddingBottom="16dp"
+                android:textColor="@color/black"/>
+
+            <!-- Video Hướng Dẫn -->
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
